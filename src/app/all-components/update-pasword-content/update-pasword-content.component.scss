@@ -1,0 +1,78 @@
+.forgot_details{
+    width: 100%; display: block; padding: 206px 54px 206px 54px; position: relative;
+    ion-card{
+        background-color: transparent; box-shadow: none;
+        ion-card-header{
+            padding: 0;
+        }
+       
+        ion-card-title{
+            color: #000000; font-weight: 300; font-size: 70px; text-transform: uppercase; margin: 0 0 20px 0; padding: 0;
+        }
+        ion-card-content{
+            color: #000; font-weight: normal; font-size: 25px; margin: 0; padding: 0;
+        }
+        
+    }    
+    .form{
+        margin-top: 95px; width: 100%; display: block;
+        ion-label{
+            font-size: 25px; color: 25px; font-weight: normal; color: #d4d4d4;
+        }
+        ion-item{
+            border-color: #787878; border-width: 2px; margin-bottom: 70px;
+        }
+        .button_back{
+            position: relative; bottom: 0; text-align: center;  position: relative; bottom: 0; max-width: 409px; margin: 143px auto 0;
+                ion-button{
+                    border-color: #0962ff; background-color: #0962ff;
+                }
+            
+        }
+    }
+}
+.back{ 
+    text-transform: uppercase; color: #2b2b2b; cursor: pointer; position: absolute; top: 80px; left: 51px;
+    ion-back-button{
+        font-size: 26px; font-weight: normal;
+    }
+}
+@media only screen and (max-width:500px){
+    .forgot_details{
+        padding: 100px 30px 100px 30px;
+        ion-card{
+            ion-card-title{
+                font-size: 38px;
+            }
+            ion-card-content{
+                font-size: 18px;
+            }
+        }
+        .form{ 
+            margin-top: 40px;
+            .button_back{
+                margin-top: 48px;  max-width: 236px;
+                ion-button{
+                    height: 60px; font-size: 18px;
+                }
+            }
+            ion-label{
+                font-size: 18px;
+            }
+            ion-item{
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+    .back{ 
+        top: 25px; left: 16px;
+        ion-back-button{
+            font-size: 18px;
+        }
+    }
+    
+    
+
+   
+}

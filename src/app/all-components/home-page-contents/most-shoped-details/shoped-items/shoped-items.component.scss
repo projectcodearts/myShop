@@ -1,0 +1,28 @@
+.product_slider{ 
+    width: 100%; display: block; margin-bottom: 10px; padding: 18px; float: left;
+    .portion{
+        width: 100%; display: block; 
+        img{
+            border-radius: 20px; width: 100%;
+        }
+        ion-button{
+            color: #000; font-size: 22px; font-weight: 500; text-transform: none;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .product_slider{
+        padding: 10px;
+        margin-bottom: 10px;
+        ion-button{
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and (max-width:320px){
+    .product_slider{
+        ion-button{
+            font-size: 16px;
+        }
+    }
+}

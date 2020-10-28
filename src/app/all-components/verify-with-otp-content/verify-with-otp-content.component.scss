@@ -1,0 +1,97 @@
+.verify_details{
+    width: 100%; display: block; padding: 206px 54px 206px 54px; position: relative;
+    ion-card{
+        background-color: transparent; box-shadow: none;
+        ion-card-header{
+            padding: 0;
+        }
+       
+        ion-card-title{
+            color: #000000; font-weight: 700; font-size: 44px; text-transform: normal; margin: 0 0 20px 0; padding: 0;
+        }
+        ion-card-content{
+            color: #4b4b4c; font-weight: 500; font-size: 25px; margin: 0; padding: 0;
+            p{ 
+                font-size: 25px; color: #000; font-weight: 600; display: block; text-align: left; margin-bottom: 20px;
+                span{ color: #0962ff; font-weight: 700; cursor: pointer; padding-left: 20px;}
+             }
+        }
+        
+    }
+    .back{ 
+        text-transform: uppercase; color: #2b2b2b; cursor: pointer; position: absolute; top: 80px; left: 51px;
+        ion-back-button{
+            font-size: 26px; font-weight: normal;
+        }
+    }
+    .form{
+        margin-top: 60px; width: 100%; display: block;
+        ion-grid{
+            ion-row{
+                ion-col{
+                    max-width: 86px; margin-right: 38px;
+                    &:last-child{ margin-right: 0;}
+                }
+            }
+        }
+        
+        ion-input{
+            width: 100%; height: 127px; border: #323333 2px solid; text-align: center;
+        }
+        .bottom_details{
+            margin-top: 60px;
+        }
+        .button_back{
+            width: 100%; position: relative; bottom: 0; text-align: center; margin-top: 83px;
+            .details{
+                display: inline-block; font-size: 27px; color: #3c3c3c;
+            }
+            .icon_holder{
+                width: 91px; height: 91px; background-color: #0962ff; color: #fff; border-radius: 100%; display: flex; align-items: center; justify-content: center;  margin-bottom: 24px;
+                ion-icon{
+                    color: #fff; width: 30px; height: 30px; 
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .verify_details{
+        padding: 100px 30px 100px 30px;
+        ion-card{
+            ion-card-title{
+                font-size: 30px;
+            }
+            ion-card-content{
+                font-size: 18px;
+                p{  font-size: 16px;}
+            }
+        }
+        .form{ 
+            margin-top: 40px;
+            .button_back{
+                margin-top: 48px;
+            }
+            ion-input{
+               height: 100px;
+            }
+            ion-grid{
+                ion-row{
+                    ion-col{
+                        max-width: 76px; margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .back{ 
+            top: 25px; left: 16px;
+            ion-back-button{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    
+
+   
+}
