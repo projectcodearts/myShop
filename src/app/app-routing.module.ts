@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'about-us',
     loadChildren: () => import('./all-pages/about-us/about-us.module').then( m => m.AboutUsPageModule)
   },
+  {
+    path: 'shop-details',
+    loadChildren: () => import('./all-pages/shop-details/shop-details.module').then( m => m.ShopDetailsPageModule)
+  },
  
  
   
