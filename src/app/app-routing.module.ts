@@ -99,6 +99,20 @@ const routes: Routes = [
     path: 'shop-details',
     loadChildren: () => import('./all-pages/shop-details/shop-details.module').then( m => m.ShopDetailsPageModule)
   },
+  {
+    path: 'wishlist',
+    loadChildren: () => import('./all-pages/wishlist/wishlist.module').then( m => m.WishlistPageModule)
+  },
+  {
+    path: 'shopping-bag',
+    loadChildren: () => import('./all-pages/shopping-bag/shopping-bag.module').then( m => m.ShoppingBagPageModule)
+  },
+  {
+    path: 'select-user-address',
+    loadChildren: () => import('./all-pages/select-user-address/select-user-address.module').then( m => m.SelectUserAddressPageModule)
+  },
+  
+ 
  
  
   

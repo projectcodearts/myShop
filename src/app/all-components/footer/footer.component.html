@@ -16,6 +16,9 @@ router.url === '/add-new-address'  ||
 router.url === '/setup-profile'  ||
 router.url === '/about-us'  ||
 router.url === '/shop-details'  ||
+router.url === '/wishlist'  ||
+router.url === '/shopping-bag'  ||
+router.url === '/select-user-address'  ||
 router.url === '/register'; then blankfooter; else mainfooter">
 </ng-container>
 
@@ -27,29 +30,41 @@ router.url === '/register'; then blankfooter; else mainfooter">
           <ion-grid>
             <ion-row>
               <ion-col [routerLink]="['/home']" routerLinkActive="router-link-active" >
-                <img src="assets/images/f1.png" alt="">
-                <div class="clear"></div>
-                <ion-label>Home</ion-label>
+                <div class="port">
+                  <img src="assets/images/f1.png" alt="">
+                  <div class="clear"></div>
+                  <ion-label>Home</ion-label>
+                </div>
               </ion-col>
               <ion-col  [routerLink]="['/categories']" routerLinkActive="router-link-active" >
-                <img src="assets/images/f2.png" alt="">
-                <div class="clear"></div>
-                <ion-label>Categories</ion-label>
+                <div class="port">
+                  <img src="assets/images/f2.png" alt="">
+                  <div class="clear"></div>
+                  <ion-label>Categories</ion-label>
+                </div>
               </ion-col>
               <ion-col>
-                <img src="assets/images/f3.png" alt="">
-                <div class="clear"></div>
-                <ion-label>chat</ion-label>
+                <div class="port">
+                  <img src="assets/images/f3.png" alt="">
+                  <div class="clear"></div>
+                  <ion-label>chat</ion-label>
+                </div>                
               </ion-col>
               <ion-col>
-                <img src="assets/images/f4.png" alt="">
-                <div class="clear"></div>
-                <ion-label>notifications</ion-label>
+                <div class="port">
+                  <img src="assets/images/f4.png" alt="">
+                  <div class="clear"></div>
+                  <ion-label>notifications</ion-label>
+                </div>
+                
               </ion-col>
               <ion-col [routerLink]="['/shop']" routerLinkActive="router-link-active">
-                <img src="assets/images/f5.png" alt="">
-                <div class="clear"></div>
-                <ion-label>bag</ion-label>
+                <div class="port">
+                  <img src="assets/images/f5.png" alt="">
+                  <div class="clear"></div>
+                  <ion-label>bag</ion-label>
+                </div>
+                
               </ion-col>
               
             </ion-row>

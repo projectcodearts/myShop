@@ -25,6 +25,9 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      if (this.platform.is('android')) {
+        this.statusBar.backgroundColorByHexString("#33000000");
+      }
       setTimeout(() => {
         document.querySelector('ion-menu').shadowRoot.querySelector('.menu-inner').setAttribute('style', 'border-radius:0px 30px 30px 0px');
         document.querySelector('ion-menu').shadowRoot.querySelector('ion-backdrop').setAttribute('style', 'background-color: #fff;  opacity: 1');       

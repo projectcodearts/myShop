@@ -294,11 +294,11 @@
     </div>
   </div>
   <div class="pro_del_button_back">
-    <ion-button class="wishlist" fill="clear">
+    <ion-button class="wishlist" fill="clear" [routerLink]="['/wishlist']" routerLinkActive="router-link-active" >
       <ion-icon slot="start" name="bookmark-outline"></ion-icon>
       WISHLIST
     </ion-button>
-    <ion-button class="cart" fill="clear" shape="round">
+    <ion-button class="cart" fill="clear" shape="round" [routerLink]="['/shopping-bag']" routerLinkActive="router-link-active" >
       <ion-icon slot="start" name="bag-outline"></ion-icon>
       ADD TO BAG
     </ion-button>

@@ -7,10 +7,26 @@
     
 }
 
+.button_back{
+    
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); 
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); 
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 35px;
+    ion-button{
+        width: 360px; margin: 0 auto 10px; 
+        &:last-child{ margin-bottom: 0;}
+    }
+
+}
+
 .button_back_top{
     position: fixed; top:38px;  right: 30px; margin: auto;  z-index: 2;
     ion-button{
-        color: #fff; font-size: 26px; font-weight: normal; text-transform: uppercase;  overflow: hidden; position: relative; transition: all .7s ease-in;
+        color: #fff; font-size: 26px; font-weight: normal; text-transform: uppercase;  overflow: hidden; position: relative; transition: all .7s ease-in; 
     }
 }
 
@@ -18,9 +34,14 @@
 
 @media only screen and (max-width:500px){
     .button_back{
-        width: 236px;
         ion-button{
-            height: 60px; font-size: 18px;
+            height: 49px; font-size: 14px; width: 206px;
+        }
+    }
+    .button_back_top{
+        right: 27px; top: 29px;
+        ion-button{
+            font-size: 14px;
         }
     }
 }

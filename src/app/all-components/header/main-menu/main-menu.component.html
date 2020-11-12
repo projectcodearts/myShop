@@ -7,7 +7,7 @@
     </ion-item> 
   </ion-menu-toggle>
   <ion-menu-toggle>
-    <ion-item lines="none" color="custom" [class.open]="open" (click)="sub_click()">
+    <ion-item lines="none" color="custom" [routerLink]="['/categories']" routerLinkActive="router-link-active" >
       <img src="assets/images/m2.png" alt="">
       <ion-label>Categories</ion-label>
       <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
@@ -48,6 +48,13 @@
     <ion-item lines="none" color="custom">
       <img src="assets/images/m7.png" alt="">
       <ion-label>Policies</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle>
+    <ion-item lines="none" color="custom" [routerLink]="['/shop-details']" routerLinkActive="router-link-active" >
+      <img src="assets/images/m7.png" alt="">
+      <ion-label>Shop Details</ion-label>
       <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
     </ion-item>
   </ion-menu-toggle>
