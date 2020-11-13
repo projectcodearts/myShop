@@ -25,23 +25,28 @@
 .tabs-inner{ padding: 30px; width: 100%}
 @media only screen and (max-width:500px){
     .search_back{
-        padding: 0 0 0 56px;
-        img{ height: 30px; left: 18px;}
+        padding: 0 0 0 60px;
+        img{ height: 24px; left: 18px;}
         ion-input{
-            height: 65px; font-size: 21px;
+            height: 56px; font-size: 18px;
         }  
+    }
+    .orders_menu{ 
+        li{
+            padding: 20px 8px; font-size: 16px;
+        }
+    }
+    .right_icon_details{
+        &.cart_icon{
+            li{
+                img{
+                    height: 21px !important;
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width:500px){
-    .search_back{
-        padding: 0 0 0 56px;
-        img{ height: 30px; left: 18px;}
-        ion-input{
-            height: 65px; font-size: 21px;
-        }  
-    }
-}
 
 @media only screen and (max-width:767px){
     .orders_menu{ 
@@ -50,17 +55,11 @@
         }
     }
 }
-@media only screen and (max-width:500px){
-    .orders_menu{ 
-        li{
-            padding: 20px 8px; font-size: 16px;
-        }
-    }
-}
+
 @media only screen and (max-width:400px){
     .orders_menu{ 
         li{
-            padding: 15px 8px; font-size: 14px;
+            padding: 21px 8px; font-size: 14px;
         }
     }
 }
@@ -70,4 +69,8 @@
             padding: 15px 4px; font-size: 14px;
         }
     }
+}
+
+.orders{
+    background-color: #fff;
 }

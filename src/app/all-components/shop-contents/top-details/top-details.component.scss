@@ -20,16 +20,19 @@
 
 @media only screen and (max-width:500px){
     .offer_notification{
-        font-size: 16px;
+        font-size: 12px; padding: 7px 0;
     }
     .filter_back{
         ul{
+            
             &.details{
+                padding: 8px 0;
+                &:after{height: 22px;} 
                 li{
-                    padding: 0 0 0 38px; font-size: 16px;  margin: 0 65px 0 0;
+                    padding: 0 0 0 38px; font-size: 13px;  margin: 0 65px 0 0;
                     &:last-child{ margin: 0 0 0 65px;}
 
-                    img{ height: 20px; }
+                    img{ height: 13px; }
                 }
             }
         }
@@ -41,13 +44,14 @@
         font-size: 16px;
     }
     .filter_back{
+        padding: 4px 3px;
         ul{
             &.details{
                 li{
-                    padding: 0 0 0 38px; font-size: 16px;  margin: 0 0 0 0;
+                    padding: 0 0 0 38px; font-size: 13px;  margin: 0 0 0 0;
                     &:last-child{ margin: 0 0 0 65px;}
 
-                    img{ height: 20px; }
+                    img{ height: 13px; }
                 }
             }
         }

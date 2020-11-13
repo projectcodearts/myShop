@@ -51,7 +51,7 @@ ion-header{
         }
     }
     .header{
-        width: 100%; background-color: #fff;  border-radius: 0 0 50px 50px; padding: 62px 20px 30px 20px;
+        width: 100%; background-color: #f2f6ff;  border-radius: 0 0 50px 50px; padding: 62px 20px 30px 20px; box-shadow: rgba(0,0,0,.1) 0 0 59px;
         &.dark_header{
             background-color: #0b56da; 
             ion-toolbar{
@@ -74,19 +74,19 @@ ion-header{
         }
         ion-toolbar{
             ion-buttons{
-                display: inline-block; vertical-align: middle;
+                display: inline-block; vertical-align: middle; padding-left: 4px;
                 ion-menu-button{ color: #000;}
             }
             ion-title{
-                color: #0b56da; padding: 0; float: left; width: 100%;
-                span{ display: inline-block; vertical-align: middle; font-style: italic; font-weight: 600; font-size: 30px; margin-top: -7px;}
+                color: #0b56da; padding: 0; float: left; width: 100%;     margin-left: -8px;  margin-top: -7px;
+                span{ display: inline-block; vertical-align: middle; font-style: italic; font-weight: 600; font-size: 30px;}
             }
             .right_icon_details{ 
                  margin: 0; padding: 0 20px 0 0;
                 li{ 
                    margin: 0 50px 0 0; padding: 0; list-style: none; cursor: pointer; float: left; position: relative;
                    span{
-                       position: absolute;font-size: 10px; bottom: -11px; right: -9px; width: 19px; height: 19px; background-color: #0b56da; color: #fff; font-weight: 500; border-radius: 100%; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 14px;
+                       position: absolute; bottom: -8px; right: -6px; width: 13px; height: 13px; background-color: #0b56da; color: #fff; font-weight: 500; border-radius: 100%; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 7px;
                    }
                     img{ display: block; cursor: pointer; filter: invert(1);}
                     &:last-child{ margin: 0;}
@@ -168,6 +168,7 @@ ion-header.account.address{
     }
 }
 
+
 .banner_top_slide{
     .swiper-pagination{          
         span{ 
@@ -177,6 +178,20 @@ ion-header.account.address{
         }
         
     }
+}
+
+
+.category_top_slide{
+    .banner_top_slide{
+        .swiper-pagination{          
+            span{ 
+                width: 5px; height: 5px; background-color: #000000; border: none; opacity: 1; margin: 0 10px 0 0 !important;
+                &:last-child{margin: 0;}
+                &.swiper-pagination-bullet-active{background-color: #fff; width: 5px;  }
+            }
+        }
+    }
+    
 }
 
 .product_slider.shoped{
@@ -293,7 +308,10 @@ ion-header.account.address{
             }
         }
         .header{
-            border-radius: 0 0 20px 20px; padding:32px 0 0 0;
+            border-radius: 0 0 20px 20px; padding:44px 0 3px 0;
+            &.dark_header{
+                padding:32px 0 0 0;
+            }
             ion-toolbar{
                 ion-title{
                     span{
@@ -302,8 +320,8 @@ ion-header.account.address{
                 }
                 .right_icon_details{ 
                    li{
-                       margin: 0 20px 0 0;
-                       img{ height: 20px;}
+                       margin: 0 23px 0 0;
+                       img{ height: 16px;}
                    } 
                 }
             }
@@ -342,10 +360,10 @@ ion-header.account.address{
 
 
 .oders_details_back{
-    width: 100%; height: auto; padding: 18px;
+    width: 100%; height: auto; padding: 10px; float: left;
 }
 .oders_details_back .portion{
-    width: 100%;position: relative; background-color: #fff; box-shadow: rgba(0,0,0,.1) 0 0 40px; float: left; margin: 0 0 35px 0;
+    width: 100%;position: relative; background-color: #fff; box-shadow: rgba(0,0,0,.1) 0 0 40px; float: left; margin: 0 0 35px 0; border-radius: 15px;
 }
 .oders_details_back .portion .order_cover{
     width: 100%; float: left; padding: 18px;
@@ -375,7 +393,7 @@ ion-header.account.address{
 .oders_details_back .portion .status .status_highlight{
     background-color: #acffc1; padding: 5px 30px; border-radius: 50px; font-size: 17px; color: #018221; font-weight: 600; text-transform: uppercase; float: left;
 }
-.oders_details_back .portion .status .order_no{ float: right; font-size: 20px; margin-top: 4px;}
+.oders_details_back .portion .status .order_no{ float: right; font-size: 20px; margin-top: 0;}
 
 .oders_details_back .portion .status_timeline{
     width: 100%; float: left; margin-top: 35px;  display: flex; position: relative;
@@ -436,7 +454,7 @@ ion-header.account.address{
     font-size: 21px; color: #343434; font-weight: 600; padding: 0 0;
 }
 
-.payment_details .order_table ul.foot li .del{ font-weight: 700; color: #000; font-size: 25px; text-transform: uppercase; }
+.payment_details .order_table ul.foot li .del{ font-weight: 700; color: #000; font-size: 25px; text-transform: capitalize; }
 .payment_details .order_table ul.foot li { padding: 0;}
 
 .help{
@@ -445,18 +463,55 @@ ion-header.account.address{
 .help img{ position: absolute; top: 0; right: 20px; bottom: 0; margin: auto;}
 
 @media only screen and (max-width:500px){
-    .oders_details_back .portion h2{ font-size: 17px;}
-    .oders_details_back .portion .price{ font-size: 15px;}
-    .oders_details_back .portion .date{ font-size: 16px;}
+    .oders_details_back .portion h2{ font-size: 12px; margin-bottom: 11px !important;}
+    .oders_details_back .portion .price{ font-size: 12px !important; margin-bottom: 11px !important;}
+    .oders_details_back .portion .date{ font-size: 12px !important; margin-bottom: 11px !important;}
     .oders_details_back .portion .status .order_no{ font-size: 14px;}
     .oders_details_back .portion .status .status_highlight{ font-size: 11px; padding: 5px 15px;}
     .oders_details_back .portion .status_timeline .part{ font-size: 12px;}
     .oders_details_back .portion .order_pending img{ width: 100px; height: 100%;}
     .oders_details_back .portion .order_pending{    padding: 0 0 0 113px;}
+    .oders_details_back .portion .address_bar{
+        margin-top: 0;
+        padding: 10px 19px;     font-size: 12px !important; border-radius: 0 0 15px 15px;
+    }
+    .help{
+        padding: 13px 19px; font-size: 12px !important; border-radius: 15px;
+    }
+    .oders_details_back .portion.shipped .order_cover{
+        padding: 13px;
+    }
+    .shipping_details h3{
+        margin: 0 0 20px 0; font-size: 10px;
+    }
+    .shipping_details .ship_del{
+        font-size: 14px;
+    }
+    .shipping_details .ship_del span{
+        font-size: 15px !important;
+    }
+    .payment_details h3{
+        font-size: 10px;     padding: 0 10px;
+    }
+    .payment_details .order_table ul{
+        padding: 0 10px;
+    }
+    .payment_details .order_table ul.body li .del{
+        font-size: 13px !important;
+    }
+    .payment_details .order_table ul.body li .del strong{
+        font-size: 14px !important;
+    }
+    .payment_details .order_table ul.foot{
+        padding: 3px 10px 12px; text-transform: capitalize;
+    }
+    .payment_details .order_table ul.foot li .del{
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:414px){
-    .oders_details_back .portion .order_pending img{ width: 80px; height: 80px; border-radius: 10px; object-position: top;}
-    .oders_details_back .portion h2{ font-size: 13px;}
+    .oders_details_back .portion .order_pending img{ width: 72px; height: 96px; border-radius: 10px; object-position: top;}
+    .oders_details_back .portion h2{ font-size: 12px;}
     .oders_details_back .portion .order_pending{    padding: 0 0 0 92px;}
     .oders_details_back .portion .price {
         font-size: 11px;
@@ -472,7 +527,7 @@ ion-header.account.address{
     }
     .oders_details_back .portion .status .status_highlight {
         font-size: 9px;
-        padding: 5px 10px;
+        padding: 1px 21px;
     }
     .oders_details_back .portion .status .order_no {
         font-size: 10px;
